@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./imgs/logo.png" />
+    <title>Yummy</title>
+</head>
+
+<body>
+
+    <!-- loading screen -->
+    <div class="loadingScreen justify-content-center align-items-center">
+        <i class="fa-solid fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <!-- --------------------------------------------------------------------- -->
+
+    <!-- sideBar -->
+    <section class="side-bar d-flex position-absolute position-fixed">
+        <div class="left-side vh-100  d-flex flex-column justify-content-between pb-4">
+            <div class="links overflow-hidden">
+                <li class="position-relative li1"><a>Search</a></li>
+                <li class="position-relative li2"><a>Categories</a></li>
+                <li class="position-relative li3"><a>Area</a></li>
+                <li class="position-relative li4"><a>Ingredients</a></li>
+                <li class="position-relative li5"><a>Contact Us</a></li>
+            </div>
+            <div class="bottom-part">
+                <div class="black-part-icons d-flex">
+                    <i class="fa-brands fa-facebook text-white"></i>
+                    <i class="fa-brands fa-twitter text-white"></i>
+                    <i class="fa-solid fa-globe mb-1 text-white glob2"></i>
+                </div>
+                <p class="text-white">Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+        <div class="right-side bg-white vh-100">
+            <div class="button vh-100 d-flex flex-column justify-content-between pt-4">
+                <img src="./imgs/logo.png" alt="Yummy-logo" class="w-75 logo">
+                <div class="text-center bars-X-button">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+                <div class="icons-white-part d-flex flex-column">
+                    <i class="fa-solid fa-globe mb-1"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------------------------------------------- -->
+    <!-- inputs -->
+    <div class="inputs pt-4 d-none pb-4 d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input">
+                        <input type="text" class="w-100 form-control input1" placeholder="Search By Name"
+                            id="searchByName">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input">
+                        <input type="text" class="w-100 form-control input2" placeholder="Search By First Letter"
+                            id="searchByFirstChar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- home section -->
+    <section class="home vh-100 pt-5 ">
+        <div class="container">
+            <div class="row" id="rowdata">
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------------------------------------------------------- -->
+
+
+    <!-- inner loading screen -->
+    <div class="inner-loading-screen justify-content-center align-items-center text-white overflow-hidden d-none">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <!-- ---------------------------------------------- -->
+
+    <!-- description section -->
+    <section class="description overflow-hidden">
+        <div class="container">
+            <div class="row pt-5 g-4" id="descRow">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------ -->
+    <!-- categories section -->
+    <section class="catego pt-5 overflow-hidden d-none">
+        <div class="container">
+            <div class="row" id="categoRow">
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------------- -->
+    <!-- area section -->
+    <section class="area vh-100 pt-5 ">
+        <div class="container">
+            <div class="row" id="areaRow">
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------------------ -->
+    <!-- ingrediants section -->
+    <section class="ingrediants  vh-100 pt-5  ">
+        <div class="container ">
+            <div class="row" id="ingredianRow">
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------------------- -->
+
+    <!-- contact us section -->
+    <section class="contactUs vh-100   d-flex justify-content-center align-items-center d-none">
+        <div class="container pt-4 ">
+            <div class="row justify-content-center form" id="form">
+                <div class="col-md-6">
+                    <div class="nameInput">
+                        <input type="text" class="mb-4 form-control" placeholder="Enter Your Name" id="nameInput">
+                        <p class="name-notes text-center d-none">Special characters and numbers not allowed</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="emailInput">
+                        <input type="email" class="mb-4 form-control" placeholder="Enter Your Email" id="emailInput">
+                        <p class="email-notes text-center d-none">Email not valid *exemple@yyy.zzz</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="phoneInput">
+                        <input type="text" class="mb-4 form-control" placeholder="Enter Your Phone" id="phoneInput">
+                        <p class="phone-notes text-center d-none">Enter valid Phone Number</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ageInput">
+                        <input type="number" class="mb-4 form-control" placeholder="Enter Your Age" id="ageInput">
+                        <p class="age-notes text-center d-none">Enter valid age</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="passwordInput">
+                        <input type="password" class="mb-4 form-control" placeholder="Enter Your Password"
+                            id="passwordInput">
+                        <p class="password-notes text-center d-none">Enter valid password *Minimum eight characters, at
+                            least one letter and one number:*</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="RepasswordInput">
+                        <input type="password" class="mb-4 form-control" placeholder="Repassword" id="Repassword">
+                        <p class="repassword-notes text-center d-none">Enter valid repassword</p>
+                    </div>
+                </div>
+                <button disabled="" class="btn Sbtn Sbutton ">Submit</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

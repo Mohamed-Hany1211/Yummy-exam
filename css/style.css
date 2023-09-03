@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainColor:#0D0D0D;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: var(--mainColor);
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* loading screen */
+.loadingScreen{
+    position: fixed;
+    background-color: var(--mainColor);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    z-index: 99999;
+    
+}
+
+.inner-loading-screen{
+    position: fixed;
+    background-color: var(--mainColor);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    z-index: 99999;
+}
+/* --------------------------------------------------------------------------- */
+/* side navbar */
+
+.side-bar{
+    left: -16.0625rem;
+    z-index: 999;
+}
+
+.left-side{
+    width: 16.0625rem;
+    background-color: var(--mainColor);
+}
+
+.links{
+    color: white;
+    padding: 2rem 0rem 0rem 1.5625rem;
+}
+
+.links li{
+    margin-bottom: 1rem;
+    cursor: pointer;
+    top: 18.75rem;
+}
+
+.right-side{
+    width: 4.125rem;
+}
+
+.logo{
+    margin-left: .5rem;
+}
+
+.fa-bars,.fa-globe,.fa-share-nodes,.fa-x{
+    color: black;
+    cursor: pointer;
+}
+
+.bottom-part{
+    margin-left: 25px;
+}
+
+.fa-facebook,.fa-twitter{
+    margin-right: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.glob2{
+    font-size: 1rem;
+}
+
+.button{
+    padding-bottom: 28px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* home section */
+
+.item{
+    /* height: 19.125rem;
+    width: 19.125rem; */
+    border-radius: .4375rem;
+    margin-bottom: 1.5625rem;
+    cursor: pointer;
+    /* margin-right: 1.25rem; */
+}
+.imgs{
+    border-radius: .4375rem;
+}
+
+.imgs-layer{
+    top: 100%;
+    width:100%;
+    bottom: 0rem;
+    background-color: rgba(255, 255, 255,0.755);
+    z-index: 10;
+    border-radius: .4375rem;
+    transition: all 0.5s;
+}
+
+.imgs-layer h3{
+    margin-left: .625rem;
+}
+
+.item:hover .imgs-layer{
+    top: 0rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/* search */
+
+.inputs input{
+    border: .0625rem solid white;
+    background-color:transparent;
+    /* overflow:scroll; */
+}
+
+.input1:focus{
+    color: white;
+}
+
+.inputs input::placeholder{
+    color: rgba(255, 255, 255,0.3);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* description section */
+
+.leftPart img{
+    border-radius: .3125rem;
+}
+
+
+.recipesUl li{
+    background-color: #cff4fc;
+    border: .0625rem solid #cff4fc;
+    margin-right: .9375rem;
+    margin-bottom: .9375rem;
+    border-radius: .3125rem;
+    padding: .3125rem;
+}
+
+.tag{
+    background-color: #f8d7da;
+    padding: .3125rem;
+    border: .0625rem solid #f8d7da;
+    border-radius: .3125rem;
+    width: auto;
+    display: inline;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* categories*/
+
+.categoItem{
+    border-radius: .3125rem;
+    cursor: pointer;
+}
+
+.categoItem img{
+    border-radius: .3125rem;
+}
+
+.categoLayer{
+    top: 100%;
+    width:100%;
+    bottom: 0rem;
+    background-color: rgba(255, 255, 255,0.755);
+    z-index: 10;
+    border-radius: .4375rem;
+    transition: all 0.5s;
+}
+
+.categoItem:hover .categoLayer{
+    top: 0rem;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* area section */
+.fa-house-laptop{
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+}
+
+.areaItem h3{
+    color: white;
+    font-weight: 500;
+}
+
+.areaItem{
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------- */
+/* ingrediants section */
+.fa-drumstick-bite{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.ingrdiantItem{
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------- */
+
+/* contact us section */
+
+#form{
+    width: 75%;
+    margin: auto;
+}
+
+.Sbtn{
+    background-color: var(--mainColor);
+    width: 80px;
+    border: 1px solid RGB(220, 53, 69);
+    color: RGB(220, 53, 69) !important;
+}
+
+.Sbtn:hover{
+    color: white !important;
+    background-color:RGB(220, 53, 69) ;
+}
+
+.contactUs p{
+    color: RGB(132, 32, 41);
+    background-color: RGB(248, 215, 218);
+    padding: 15px;
+    border-radius: 5px;
+}
